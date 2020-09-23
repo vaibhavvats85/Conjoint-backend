@@ -3,7 +3,8 @@ const app = require("./app");
 require("dotenv").config();
 
 const mongoose = require("mongoose");
-mongoose.connect(process.env.DATABASE, {
+const uri ="mongodb+srv://vvats:<password>@cluster0.ol48y.mongodb.net/<dbname>?retryWrites=true&w=majority";
+mongoose.connect(uri, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
