@@ -17,14 +17,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: "type is required!",
       },
-    To: {
-        type: JSON,
-        required: "Name is required!",
-      },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("user", userSchema);

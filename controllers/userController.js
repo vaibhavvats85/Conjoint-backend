@@ -37,6 +37,7 @@ exports.register = async (req, res) => {
       email,
       password,
     });
+    console.log(email,password)
   
     if (!user) throw "Email and Password did not match.";
   
