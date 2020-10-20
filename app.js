@@ -1,13 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+var bodyParser = require('body-parser')
 // var corsOptions = {
 //   origin: 'http://127.0.0.1:5000',
 //   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 // }
 app.use(cors())
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(require('./routes/user'));
 

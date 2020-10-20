@@ -16,6 +16,6 @@ mongoose.connection.once("open", () => {
   console.log("MongoDB Connected!");
 });
 
-app.listen(process.env.PORT || 3000,() =>{
-    console.log(`server is listening on port ${process.env.PORT || 3000}`);
+app.listen(process.env.PORT || 5000,() =>{
+    console.log(`server is listening on port ${process.env.PORT || 5000}`);
 })
